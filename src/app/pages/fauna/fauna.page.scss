@@ -34,12 +34,38 @@ div.pie{
   text-shadow: 2px 2px 5px purple;
   padding: 10px;
 }
+/*
 .enlaces a{
   color: #ff62b4;
   font-size: 40px;
+}*/
+
+.enlaces1{
+  color: #ff62b4;
+  font-size: 30px;
+  position: absolute;
+  top: 168px;
+  left: 1%;
+}
+
+.enlaces2{
+  color: #ff62b4;
+  font-size: 30px;
+  position: absolute;
+  top: 220px;
+  left: 1%;
 }
 
 form{
 align-items: center;
 top:left;
+}
+
+.conteinerFotos{
+  overflow-y: scroll;
+  position: absolute;
+  height: 572px;
+  top: 18%;
+  width: 1187px;
+  left: 10%;
 }
