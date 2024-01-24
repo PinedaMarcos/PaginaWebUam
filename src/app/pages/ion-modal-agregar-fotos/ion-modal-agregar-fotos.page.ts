@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-ion-modal-agregar-fotos',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IonModalAgregarFotosPage implements OnInit {
 
-  constructor() { }
+  public agregar: FormGroup;
 
-  ngOnInit() {
+  constructor(private FormBuilder: FormBuilder) {
+
   }
 
+  ngOnInit(): void {
+    this.agregar = this.FormBuilder.group({
+      nombreCientifico: ['', [Validators.required]],
+      nombreColoquial: ['', [Validators.required]],
+      Autor: ['', [Validators.required]],
+      Imagen: ['',[Validators.required]],
+    });
+  }
+
+  send():any{
+    console.log(this.send)
+  }
 }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -8,7 +7,6 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {path: 'login', component: LoginComponent},
 {
  path: 'home',
 loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
@@ -29,7 +27,11 @@ loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   {
     path: 'ion-modal-agregar-fotos',
     loadChildren: () => import('./pages/ion-modal-agregar-fotos/ion-modal-agregar-fotos.module').then( m => m.IonModalAgregarFotosPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
+
 ];
 @NgModule({
   imports: [

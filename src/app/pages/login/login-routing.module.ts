@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { IonModalAgregarFotosPage } from './ion-modal-agregar-fotos.page';
-import { ReactiveFormsModule } from '@angular/forms';
+import { LoginPage } from './login.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: IonModalAgregarFotosPage
+    component: LoginPage
   }
 ];
 
@@ -15,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class IonModalAgregarFotosPageRoutingModule {}
+export class LoginPageRoutingModule {}
