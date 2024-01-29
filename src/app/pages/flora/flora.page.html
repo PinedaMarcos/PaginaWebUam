@@ -18,6 +18,14 @@
 </head>
 <br>
   <h1> Flora Observada en la Uam Lerma</h1>
+
+  <ion-searchbar
+  placeholder="Buscar nombre de la especie o aut@r"
+  class="busqueda"
+  (ionChange)="buscar($event)"
+  [debounce]="100"
+></ion-searchbar>
+
 <div class="coneinerFotos">
   <div class="galeria">
       <div class="foto">

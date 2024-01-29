@@ -27,7 +27,8 @@ loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   {
     path: 'ion-modal-agregar-fotos',
     loadChildren: () => import('./pages/ion-modal-agregar-fotos/ion-modal-agregar-fotos.module').then( m => m.IonModalAgregarFotosPageModule)
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },

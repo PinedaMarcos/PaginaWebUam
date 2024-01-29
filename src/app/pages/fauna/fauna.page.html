@@ -21,6 +21,13 @@
 
     <h1> Fauna Observada en la Uam Lerma</h1>
 
+    <ion-searchbar
+    placeholder="Buscar nombre de la especie o aut@r"
+    class="busqueda"
+    (ionChange)="buscar($event)"
+    [debounce]="250"
+  ></ion-searchbar>
+
   <div class = "conteinerFotos">
     <div class="galeria">
         <div class="foto">
@@ -33,6 +40,17 @@
         </div>
     </div>
 
+
+    <div class="galeria" *ngFor="let item of listProducts">
+      <div class="foto">
+          <ion-img>{{item.Imagen}}</ion-img>
+      </div>
+      <div class="pie">
+          <p><i>{{item.nombreCientifico}}</i></p>
+          <p>{{item.nombreColoquial}}</p>
+          <p>Fotografía: {{item.Autor}}</p>
+      </div>
+  </div>
     <div class="galeria">
         <div class="foto">
             <img src="../../../assets/imagenes/fauna/Cardellina pusilla_chipe de corona negra_20230218_001.jpg" alt="">

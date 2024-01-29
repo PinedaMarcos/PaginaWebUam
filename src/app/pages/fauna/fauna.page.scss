@@ -63,9 +63,26 @@ top:left;
 
 .conteinerFotos{
   overflow-y: scroll;
-  position: absolute;
+  /* position: absolute; */
   height: 572px;
-  top: 18%;
+  //top: 26%;
   width: 1187px;
-  left: 10%;
+  //left: 10%;
+  margin-left: 10%;
+  margin-top: 4%;
 }
+
+  ion-searchbar.busqueda{
+    color: white;
+    width: 42%;
+    height: 15%;
+    font-size: small;
+    /* left: 2%; */
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 29%;
+    /* margin-right: 50%; */
+    margin-top: 3%;
+   }
+

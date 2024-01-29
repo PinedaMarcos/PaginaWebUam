@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flora.page.scss'],
 })
 export class FloraPage implements OnInit {
-
+  textBuscar: string;
   constructor() { }
 
   ngOnInit() {
   }
-
+  buscar(event){
+    this.textBuscar = event.detail.value;
+      }
 }
